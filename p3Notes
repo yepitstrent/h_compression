@@ -1,0 +1,16 @@
+Pseudocode:
+
+k = 0
+input = ... get preorder traversal vector from user ...
+Reconstruct(T)
+  if input[k] == N
+    T = new node with label N
+    k = k + 1 
+    Reconstruct(T.left)
+    Reconstruct(T.right)
+  else 
+    T = new node with label L
+    T.left = T.right = null
+    k = k + 1
+
+Call with a null node.
